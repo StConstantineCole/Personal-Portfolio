@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel Cole || Front End Developer</title>
+    <script src="https://kit.fontawesome.com/fcd3eba8dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <header>
+            <!-- <img src="" alt="" id="logo"> -->
+            <!-- <h1>Noel Cole</h1> -->
+                <nav>
+                    <ul id="navItems">
+                        <li id="projectLink" class="navLink hoverStateB"><a href="#projects"><i class="fa-solid fa-tachograph-digital"></i>Projects</a></li>
+                        <!-- <li class="navLink"><a href="#"><i class="fa-solid fa-address-card"></i>About me</a></li> -->
+                        <li class="navLink"><a href="#contact"><i class="fa-solid fa-inbox"></i>Contact</a></li>
+                    </ul>
+            </nav>
+            <img src="./images/icon-close-menu.svg" alt="" id="closeMenu">
+            <img src="/images/icon-menu.svg" alt="" id="openMenu">
+        </header>   
+
+        <div class="proSummary">
+            <img src="/images/noel (2).jpg" alt="Noel">
+            <h1>Noel Cole</h1>
+            <small>Front End Developer</small>
+            <p>
+                Hi, and welcome to my portfolio, as a Front End developer I am <mark>Immensely Passionate</mark> about 
+                web technologies and being able use them to solve real world problems. My ultimate goal is to master the 
+                craft of web develpment through practice and 
+                hard work, and produce high standard applications.
+            </p>
+        </div>  
+        
+        <div class="detailsSum">
+            <div class="skills">
+                <h1>Skills</h1>
+            <ul class="skillList">
+                <li class="hoverState"><i class="fa-brands fa-html5"></i>HTML</li>
+                <LI class="hoverState"><i class="fa-brands fa-css3"></i>CSS</LI>
+                <li class="hoverState"><i class="fa-brands fa-js"></i>javascript</li>
+                <li class="hoverState"><i class="fa-brands fa-git"></i>Git</li>
+                <li class="hoverState"><i class="fa-solid fa-database"></i>SQL</li>
+            </ul>
+            </div>
+
+            <div class="links">
+                <h1>Links</h1>
+            <ul class="linkList">
+                <li><a href="https://github.com/StConstantineCole"><i class="fa-brands fa-github"></i>GitHub</a></li>
+                <li><a href="https://www.frontendmentor.io/profile/StConstantineCole"><i class="fa-solid fa-laptop-code"></i>FrontEnd Mentor</a></li> 
+                <li><a href="https://www.linkedin.com/in/noel-cole-377747152/"><i class="fa-brands fa-linkedin-in"></i>linkedIn</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+        <div id="projects" class="projects-container">
+
+            <h1>Projects</h1>
+            <div class="card">
+                <div class="cardImage sunnySide"></div>
+                <h1 class="cardTitle">Sunny Side</h1>
+                <summary>This landing page was developed using CSS, HTML, and Javascript. it is responsive features a mobile version and 
+                    mobile menu, made possible with css flexbox and media queries.
+                </summary>
+                <a class="hoverStateB" target="_blank" href="https://stconstantinecole.github.io/sunnySide/">Preview</a>
+            </div>
+
+            <div class="card">
+                <div class="cardImage snap"></div>
+                <h1 class="cardTitle">Snap</h1>
+                <summary>The navigation bar with drop down menu is the main feature of this project, responsive to both desktop and mobile devices.
+                    developed using html, css and Javascript.
+                </summary>
+                <a class="hoverStateB" target="_blank" href="https://stconstantinecole.github.io/landing-page/#">Preview</a>
+            </div>
+
+            <div class="card">
+                <div class="cardImage insure"></div>
+                <h1 class="cardTitle">Insure</h1>
+                <summary>Responsive website developed using html, css and javascript. developed for mobile and desktop.
+                </summary>
+                <a class="hoverStateB" target="_blank" href="https://stconstantinecole.github.io/insure-landing-page/">Preview</a>
+            </div>
+
+            <div class="card">
+                <div class="cardImage loop"></div>
+                <h1 class="cardTitle">Loop Studios</h1>
+                <summary>This is a responsive site for mobile and desktop. developed with html, css and Javascript for the mobile menu.
+                </summary>
+                <a class="hoverStateB" target="_blank" href="https://stconstantinecole.github.io/loopstudios/">Preview</a>
+            </div>
+        </div>
+
+        <div class="formContainer">
+            <h1 id="contact">Contact</h1>
+            <form  onsubmit="return false" action="">
+                <div class="form-element">
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-element">
+                    <label for="phone">Phone</label> <br>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-element">
+                    <label for="message">Message</label> <br>
+                    <textarea id="message" name="message" placeholder="Message" cols="30" rows="10" required></textarea>
+                </div>  
+                <div class="form-element">
+                    <button class="hoverState" id="sendBtn" onclick="clearFields();" >Send Email</button> 
+                </div>
+        </div>
+
+        <footer>
+            <p>Email: <a type="email" href="mailto:noelcole123@gmail.com">noelcole123@gmail.com</a></p>
+            <p>Tel: <a href="tel:5413106054">15413106054</a> </p>
+        </footer>
+
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+--White: hsl(0, 0%, 100%);
+--Light-grayish-violet: hsl(270, 3%, 87%);
+--Dark-grayish-violet: hsl(279, 6%, 55%);
+--Very-dark-violet: hsl(278, 85%, 3%);
+--font-family: 'Space Grotesk', sans-serif;
+}
+
+body{   
+margin: 0;
+padding: 0;
+color: var(--White);
+box-sizing: border-box;
+font-family: var(--font-family);
+font: 18px;
+background-color: var(--Very-dark-violet);
+}
+
+.mainContainer{
+margin: 0 AUTO;
+width: 80%;
+height: 100vh;
+background-color: var(--Very-dark-violet);   
+}
+
+.mainContainer h1{
+    color: var(--Light-grayish-violet);
+}
+
+header{
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40%;
+}
+
+
+nav{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#navItems{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.navLink{
+    list-style: none;
+    border-bottom: 1px solid var(--Very-dark-violet);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#projectLink{
+    border: 1px solid var(--White);
+    border-radius: 10px;
+    padding: .3rem .5rem 0.3rem .5rem;
+}
+
+
+.fa-tachograph-digital,
+.fa-inbox
+{
+    padding-right: .5rem;
+}
+
+.navLink a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+#openMenu,
+#closeMenu{
+    display: none;
+}
+
+.proSummary{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 3%;
+    margin: 0 auto;
+}
+
+.proSummary p mark{
+    background-color: var(--White);
+}
+
+
+
+.proSummary img{
+    width: 30%;
+    border-radius: 100%;
+}
+
+.detailsSum{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skills,
+.links{
+    width: 20%;
+}
+
+.skillList,
+.linkList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.linkList li:hover{
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+}
+
+.linkList li:hover a{
+   color: var(--White)
+}
+
+.detailsSum li{
+    list-style: none;
+    margin-top: .5rem;
+    text-align: left;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid var(--White);
+    border-radius: 10px;
+    color: var(--Very-dark-violet);
+    text-align: center;
+}
+
+.hoverState:hover{
+    border-color: var(--White);
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    transition: .5s;
+}
+
+.hoverStateB:hover{
+    border-color: var(--White);
+    background-color: var(--White);
+    color: var(--Very-dark-violet);
+    transition: .5s;
+}
+
+.hoverStateC:hover{
+    border-color: var(--White);
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    transition: .5s;
+}
+
+
+.detailsSum li a{
+    color: var(--Very-dark-violet);
+    text-decoration: none;
+}
+
+.detailsSum i{
+    margin-right: 5px;
+}
+
+
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.projects-container h1{
+    width: 100%;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.cardImage{
+    width: 70%;
+    height: 220px;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.sunnySide{
+    background-image: url(/images/cardImages/SuunySide.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.snap{
+    background-image: url(/images/cardImages/snap.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.insure{
+    background-image: url(/images/cardImages/insure.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loop{
+    background-image: url(/images/cardImages/loopStduios.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card summary{
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.card a{
+    text-decoration: none;
+    padding: 5px;
+    color: var(--White);
+    border: 1px solid var(--White);
+    border-radius: 10PX;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+}
+
+.form-element label{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+form input{
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: var(--White);
+    outline: none;
+}
+
+form textarea{
+    border-radius: 10px;
+}
+
+form textarea::placeholder{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+
+form input:hover{
+    background-color: rgb(204, 216, 233);
+}
+
+form input::placeholder{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+
+#message{
+    height: 25vh;
+    max-width: 100%;
+    justify-self: center;
+    margin-bottom: 10px;
+    padding-left: 20px; 
+    padding-top: 10px;   
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(245, 242, 238);
+    outline: none;
+}
+
+#message::placeholder{
+    padding-left: 10px;
+}
+
+#message:hover{
+    background-color: rgb(204, 216, 233);
+}
+
+#sendBtn{
+    width: 100%;
+    height: 35px;
+    border: 1px solid white;
+    word-wrap: nowrap;
+    border-radius: 10px;
+    align-self: center;
+    background-color: var(--Very-dark-violet);
+    cursor: pointer;
+    font-family: var(--font-family);
+    color: var(--White);
+}
+
+#sendBtn:hover{
+    border-color: var(--Very-dark-violet);
+    background-color: var(--White);
+    color: var(--Very-dark-violet);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: --white;
+}
+
+footer a{
+    color: var(--white)
+}
+
+
+@media screen and (max-width: 700px){
+    .proSummary{
+        width: 100%;
+
+    }
+
+    .detailsSum{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .skillList,
+    .linkList{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .skills,
+    .links{
+    width: 40%;
+}
+
+    .detailsSum li{
+        margin-bottom: 1rem;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .detailsSum li a{
+        text-align: center;
+    }
+
+    .projects-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin-top: 2%;
+        border-radius: 10px;
+    }
+}
