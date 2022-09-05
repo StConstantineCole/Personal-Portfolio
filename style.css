@@ -212,28 +212,28 @@ nav{
 }
 
 .sunnySide{
-    background-image: url(/images/cardImages/SuunySide.jpg);
+    background-image: url(./images/cardImages/SuunySide.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .snap{
-    background-image: url(/images/cardImages/snap.jpg);
+    background-image: url(./images/cardImages/snap.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;   
 }
 
 .insure{
-    background-image: url(/images/cardImages/insure.jpg);
+    background-image: url(./images/cardImages/insure.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .loop{
-    background-image: url(/images/cardImages/loopStduios.jpg);
+    background-image: url(./images/cardImages/loopStduios.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
